@@ -61,7 +61,8 @@ renv::init()
 
 # You can also clean up a project by removing unused packages using the
 # following command: renv::clean()
-  
+
+
 # After you have confirmed that your code works as expected, use
 # renv::snapshot() to record the packages and their
 # sources in the lockfile.
@@ -575,13 +576,14 @@ summary(crop_dataset_interactive_two_way_anova_with_block)
 
 # Execute the following code to create histograms for the “BostonHousing”
 # dataset:
+
 par(mfrow = c(1, 3))
 for (i in 1:3) {
   hist(BostonHousing[, i], main = names(BostonHousing)[i])
 }
 hist(BostonHousing[, 5], main = names(BostonHousing)[5])
 hist(BostonHousing[, 6], main = names(BostonHousing)[6])
-hist(BostonHousing[, 7], main = names(BostonHousing)[7])
+ hist(BostonHousing[, 7], main = names(BostonHousing)[7])
 hist(BostonHousing[, 8], main = names(BostonHousing)[8])
 hist(BostonHousing[, 9], main = names(BostonHousing)[9])
 hist(BostonHousing[, 10], main = names(BostonHousing)[10])
